@@ -10,6 +10,11 @@ import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
+import uk.co.anttheantster.antsutilities.blocks.ModBlocks;
+import uk.co.anttheantster.antsutilities.client.KeyBindsHandler;
+import uk.co.anttheantster.antsutilities.events.AngelRingEvent;
+import uk.co.anttheantster.antsutilities.items.ModItems;
+import uk.co.anttheantster.antsutilities.utils.ModCreativeTab;
 import uk.co.anttheantster.antsutilities.utils.VersionChecker;
 
 @Mod(AntsUtilities.MOD_ID)
@@ -23,7 +28,7 @@ public class AntsUtilities {
 
         NeoForge.EVENT_BUS.register(this);
 
-        setup();
+        setup(modEventBus);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)
@@ -42,11 +47,21 @@ public class AntsUtilities {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
+            NeoForge.EVENT_BUS.register(new KeyBindsHandler());
+
             NeoForge.EVENT_BUS.register(VersionChecker.class);
         }
     }
 
-    private void setup(){
+    private void setup(IEventBus modEventBus){
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+        ModCreativeTab.register(modEventBus);
 
+        setupEvents();
+    }
+
+    private void setupEvents(){
+        NeoForge.EVENT_BUS.register(new AngelRingEvent());
     }
 }

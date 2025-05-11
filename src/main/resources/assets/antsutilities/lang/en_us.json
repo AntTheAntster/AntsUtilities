@@ -1,5 +1,15 @@
 {
-  "itemGroup.antsutilities": "Example Mod Tab",
-  "block.antsutilities.example_block": "Example Block",
-  "item.antsutilities.example_item": "Example Item"
+  "item.antsutilities.ender_bag": "Ender Bag",
+  "item.antsutilities.ender_core": "Ender Core",
+
+  "item.antsutilities.angel_ring": "Angel Ring",
+
+  "creativetab.antsutilities.tabname": "Ant's Utilities",
+
+  "item.antsutilities.angel_ring.tooltip": "Angel Ring granting creative flight. Inspired by Extra Utilities' Angel Ring",
+  "item.antsutilities.angel_ring.tooltip2": "Toggle On/Off via keybind in controls",
+  "item.antsutilities.angel_ring.tooltip_no_shift": "Hold [Shift] for item description",
+
+  "key.antsutilities.open_ender_bag": "Open Ender Bag",
+  "key.antsutilities.toggle_angel_ring": "Toggle Angel Ring"
 }
