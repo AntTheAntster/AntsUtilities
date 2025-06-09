@@ -7,6 +7,7 @@ import net.minecraft.world.item.ItemStack;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import uk.co.anttheantster.antsutilities.AntsUtilities;
+import uk.co.anttheantster.antsutilities.blocks.ModBlocks;
 import uk.co.anttheantster.antsutilities.items.ModItems;
 
 import java.util.function.Supplier;
@@ -27,8 +28,9 @@ public class ModCreativeTab {
 
                         output.accept(ModItems.ENDER_BAG.get().getDefaultInstance());
                         output.accept(ModItems.ENDER_CORE.get().getDefaultInstance());
-
                         output.accept(ModItems.ANGEL_RING.get().getDefaultInstance());
+
+                        output.accept(ModBlocks.WORKTABLE.get());
 
                     }).build());
 }

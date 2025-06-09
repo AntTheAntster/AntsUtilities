@@ -13,8 +13,13 @@ import uk.co.anttheantster.antsutilities.AntsUtilities;
 public class KeyBinds {
     public static final KeyBinds INSTANCE = new KeyBinds();
     private KeyBinds() {}
-
     private static final String CATEGORY = "Ant's Utilities";
+
+    @SubscribeEvent
+    public static void registerKeys(RegisterKeyMappingsEvent event) {
+        event.register(openEchest);
+        event.register(toggleRingKey);
+    }
 
 
     public static final KeyMapping openEchest = new KeyMapping(
@@ -26,10 +31,4 @@ public class KeyBinds {
             "key.antsutilities.toggle_angel_ring", KeyConflictContext.IN_GAME,
             InputConstants.getKey(InputConstants.KEY_V, -1), CATEGORY
     );
-
-    @SubscribeEvent
-    public static void registerKeys(RegisterKeyMappingsEvent event) {
-        event.register(openEchest);
-        event.register(toggleRingKey);
-    }
 }
