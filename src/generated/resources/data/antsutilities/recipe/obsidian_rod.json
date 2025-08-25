@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "ring",
+  "key": {
+    "S": "#antsutilities:saws",
+    "O": "minecraft:obsidian"
+  },
+  "pattern": [
+    "S",
+    "O",
+    "O"
+  ],
+  "result": {
+    "count": 4,
+    "id": "antsutilities:obsidian_rod"
+  }
+}

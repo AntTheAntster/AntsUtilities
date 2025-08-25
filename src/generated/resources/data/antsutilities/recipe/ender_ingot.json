@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "misc",
+  "key": {
+    "T": "minecraft:ender_pearl",
+    "E": "minecraft:ender_eye",
+    "B": "minecraft:dragon_breath",
+    "P": "minecraft:piston"
+  },
+  "pattern": [
+    " P ",
+    "ETE",
+    "TBT"
+  ],
+  "result": {
+    "count": 1,
+    "id": "antsutilities:ender_ingot"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "ring",
+  "key": {
+    "E": "antsutilities:ender_ingot",
+    "A": "antsutilities:ancient_ingot",
+    "N": "antsutilities:nether_star_ingot",
+    "O": "antsutilities:obsidian_rod"
+  },
+  "pattern": [
+    "EA",
+    "NO",
+    " O"
+  ],
+  "result": {
+    "count": 1,
+    "id": "antsutilities:axeoflife"
+  }
+}

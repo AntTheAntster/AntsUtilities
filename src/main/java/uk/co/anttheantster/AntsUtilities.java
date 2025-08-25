@@ -1,36 +1,26 @@
 package uk.co.anttheantster;
 
 import net.minecraft.client.Minecraft;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
 
-import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.core.registries.Registries;
-import net.minecraft.network.chat.Component;
-import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.CreativeModeTabs;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.material.MapColor;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.Mod;
-import net.neoforged.fml.config.ModConfig;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
-import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
-import net.neoforged.neoforge.registries.DeferredBlock;
-import net.neoforged.neoforge.registries.DeferredHolder;
-import net.neoforged.neoforge.registries.DeferredItem;
-import net.neoforged.neoforge.registries.DeferredRegister;
+import uk.co.anttheantster.client.KeybindsHandler;
+import uk.co.anttheantster.events.AngelRingEvent;
+import uk.co.anttheantster.events.HoldAxeOfLife;
+import uk.co.anttheantster.events.InteractEnderBag;
+import uk.co.anttheantster.items.ModItems;
+import uk.co.anttheantster.utils.ModCreativeTab;
 
 @Mod(AntsUtilities.MODID)
 public class AntsUtilities {
@@ -43,6 +33,8 @@ public class AntsUtilities {
 
         NeoForge.EVENT_BUS.register(this);
 
+        setup(modEventBus);
+
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {
@@ -52,5 +44,28 @@ public class AntsUtilities {
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {
         LOGGER.info("Hello server!");
+    }
+
+    @EventBusSubscriber(modid = AntsUtilities.MODID, value = Dist.CLIENT)
+    public static class ClientModEvents {
+
+        @SubscribeEvent
+        public static void clientSetup(FMLClientSetupEvent event) {
+            NeoForge.EVENT_BUS.register(new KeybindsHandler());
+            //NeoForge.EVENT_BUS.register(VersionChecker.class);
+        }
+    }
+
+    private void setup(IEventBus modEventBus) {
+        ModItems.registerItems(modEventBus);
+        ModCreativeTab.registerCreativeTab(modEventBus);
+
+        registerEvents();
+    }
+
+    private void registerEvents(){
+        NeoForge.EVENT_BUS.register(new AngelRingEvent());
+        NeoForge.EVENT_BUS.register(new InteractEnderBag());
+        NeoForge.EVENT_BUS.register(new HoldAxeOfLife());
     }
 }

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "ring",
+  "key": {
+    "B": "antsutilities:diamond_saw_blade",
+    "S": "minecraft:stick"
+  },
+  "pattern": [
+    " B",
+    "S "
+  ],
+  "result": {
+    "count": 1,
+    "id": "antsutilities:diamond_saw"
+  }
+}

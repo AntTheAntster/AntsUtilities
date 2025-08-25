@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "ring",
+  "key": {
+    "H": "minecraft:heart_of_the_sea",
+    "N": "minecraft:nether_star",
+    "G": "minecraft:gold_block",
+    "B": "minecraft:netherite_block",
+    "F": "minecraft:feather"
+  },
+  "pattern": [
+    "NFN",
+    "GHG",
+    "GBG"
+  ],
+  "result": {
+    "count": 1,
+    "id": "antsutilities:angel_ring"
+  }
+}

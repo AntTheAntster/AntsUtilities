@@ -1,3 +1,43 @@
 {
+  "item.antsutilities.angel_ring": "Angel Ring",
+  "item.antsutilities.axe_of_life": "Axe Of Life",
 
+  "item.antsutilities.ender_bag": "Ender Bag",
+  "item.antsutilities.leather_bag": "Leather Bag",
+  "item.antsutilities.iron_bag": "Iron Bag",
+  "item.antsutilities.gold_bag": "Gold Bag",
+  "item.antsutilities.diamond_bag": "Diamond Bag",
+  "item.antsutilities.netherrite_bag": "Netherrite Bag",
+
+
+  "item.antsutilities.iron_saw": "Iron Saw",
+  "item.antsutilities.diamond_saw": "Diamond Saw",
+
+  "item.antsutilities.ender_core": "Ender Core",
+  "item.antsutilities.obsidian_rod": "Obsidian Rod",
+  "item.antsutilities.iron_saw_blade": "Iron Saw Blade",
+  "item.antsutilities.diamond_saw_blade": "Diamond Saw Blade",
+  "item.antsutilities.nether_star_ingot": "Nether Star Ingot",
+  "item.antsutilities.ender_ingot": "Ender Ingot",
+  "item.antsutilities.ancient_ingot": "Ancient Ingot",
+
+  "key.antsutilities.toggle_angel_ring": "Toggle Angle Ring",
+  "key.antsutilities.open_ender_bag": "Open Ender Bag",
+  "key.antsutilities.test": "Test Key",
+
+  "menu.antsutilities.iron_bag.title": "Iron Bag",
+
+  "tooltip.antsutilities.angel_ring.shift": "Permanent Creative Flight While Equipped",
+  "tooltip.antsutilities.angel_ring.shift_1": "Configurable keybind to toggle on/off",
+  "tooltip.antsutilities.angel_ring.no_shift": "Hold [Shift] for info.",
+  "tooltip.antsutilities.ender_bag.shift": "Portable Ender Chest While Equipped",
+  "tooltip.antsutilities.ender_bag.shift_1": "Configurable keybind to toggle on/off or right click with the bag in your hand",
+  "tooltip.antsutilities.ender_bag.no_shift": "Hold [Shift] for info.",
+  "tooltip.antsutilities.leather_bag": "Has 9 slots",
+  "tooltip.antsutilities.iron_bag": "Has 18 slots",
+  "tooltip.antsutilities.gold_bag": "Has 27 slots",
+  "tooltip.antsutilities.diamond_bag": "Has 36 slots",
+  "tooltip.antsutilities.netherrite_bag": "Has 54 slots",
+
+  "creativetab.antsutilities.tabname": "Ant's Utilities"
 }

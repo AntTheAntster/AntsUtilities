@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "ring",
+  "key": {
+    "D": "minecraft:diamond",
+    "F": "minecraft:flint"
+  },
+  "pattern": [
+    "DDF"
+  ],
+  "result": {
+    "count": 1,
+    "id": "antsutilities:diamond_saw_blade"
+  }
+}
