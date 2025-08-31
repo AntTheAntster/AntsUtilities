@@ -17,7 +17,8 @@ public class DiamondBag extends AbstractBag {
 
     public DiamondBag() {
         super(dbProperties
-                .setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(AntsUtilities.MODID, "diamond_bag"))));
+                .setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(AntsUtilities.MODID, "diamond_bag"))),
+                36);
     }
 
     @Override

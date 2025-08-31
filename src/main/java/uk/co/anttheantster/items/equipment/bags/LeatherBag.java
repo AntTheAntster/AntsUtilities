@@ -17,8 +17,8 @@ public class LeatherBag extends AbstractBag {
     private static final Properties lbProperties = AbstractBag.properties;
 
     public LeatherBag() {
-        super(lbProperties
-                .setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(AntsUtilities.MODID, "leather_bag"))));
+        super(lbProperties.setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(AntsUtilities.MODID, "leather_bag"))),
+                9);
     }
 
     @Override

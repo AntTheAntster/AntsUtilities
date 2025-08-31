@@ -25,7 +25,7 @@
   "key.antsutilities.open_ender_bag": "Open Ender Bag",
   "key.antsutilities.test": "Test Key",
 
-  "menu.antsutilities.iron_bag.title": "Iron Bag",
+  "menu.antsutilities.bag_title": "Bag",
 
   "tooltip.antsutilities.angel_ring.shift": "Permanent Creative Flight While Equipped",
   "tooltip.antsutilities.angel_ring.shift_1": "Configurable keybind to toggle on/off",

@@ -17,7 +17,8 @@ public class GoldBag extends AbstractBag {
 
     public GoldBag(){
         super(gbProperties
-                .setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(AntsUtilities.MODID, "gold_bag"))));
+                .setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(AntsUtilities.MODID, "gold_bag"))),
+                27);
     }
 
     @Override

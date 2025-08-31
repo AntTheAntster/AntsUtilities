@@ -18,7 +18,8 @@ public class NetherriteBag extends AbstractBag {
 
     public NetherriteBag() {
         super(nbProperties
-                .setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(AntsUtilities.MODID, "netherrite_bag"))));
+                .setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(AntsUtilities.MODID, "netherrite_bag"))),
+                54);
     }
 
     @Override

@@ -16,8 +16,8 @@ public class IronBag extends AbstractBag {
     private static final Properties ibProperties = properties;
 
     public IronBag() {
-        super(ibProperties
-                .setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(AntsUtilities.MODID, "iron_bag"))));
+        super(ibProperties.setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(AntsUtilities.MODID, "iron_bag"))),
+                18);
     }
 
     @Override
